@@ -6,6 +6,6 @@ def safe_divide(numerator, denominator):
             raise ZeroDivisionError("Error: Cannot divide by zero.")
         return num / denom
     except ValueError:
-        return "Invalid input: Please provide numeric values."
+        return "Error: Please enter numeric values only."
     except ZeroDivisionError as e:
         return str(e)
